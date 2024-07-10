@@ -9,6 +9,7 @@ LIMIT_RIGHT = 42
 def get_data_from_topic():
     """
     Recuperer les donnees depuis MQTT, Kafka
+    librairie paho-mqtt
     """
     temp = time.time() % LIMIT_RIGHT
     return {"temperature": temp, "tension_art": temp + 60}
